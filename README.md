@@ -1,8 +1,8 @@
 # Predict-Daily-Bike-Rental-Ridership
 
-This is the first project in [Deep Learning nanodegree](https://www.udacity.com/course/deep-learning-nanodegree--nd101) at Udacity. Codes including data cleaning, plotting, and training were given by Udacity. 
+This is the first project in [Deep Learning Nanodegree](https://www.udacity.com/course/deep-learning-nanodegree--nd101) at Udacity. Codes including data cleaning, plotting, and training were provided by Udacity. 
 
-I implemented 2 layer neural network in this project. I used the model to train and test on the data set. Here's the prediction of the bike rental from Dec 11 2012 to Dec 31 2012:
+In this project, I implemented 2 layer neural network. Approximately 730 days of the period was divided into training set, validation set, and test set in proportion of 30:3:1. Following plot shows the prediction of the bike rental from Dec 11 2012 to Dec 31 2012 from the trained neural network:
 
 ![final result](plots/step3_prediction.png)
 
@@ -22,7 +22,7 @@ Data Cleaning was done by Udacity
 
 Plotting first 10 days of the dataset.
 
-![beginning](step1_check_data.png)
+![beginning](plots/step1_check_data.png)
 
 ### Step 2: Scaling target variables
 
@@ -69,7 +69,7 @@ I chose 10 hidden nodes. When I experimented with smaller number of hidden nodes
 
 Following is the plot showing the training loss and validation loss of the trained network model:
 
-![model loss](data/step2_model_loss.png)
+![model loss](plots/step2_model_loss.png)
 
 ## Result
 
