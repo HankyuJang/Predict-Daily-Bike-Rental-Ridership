@@ -14,6 +14,7 @@ rides.head()
 
 # Check out the data
 rides[:24*10].plot(x='dteday', y='cnt')
+plt.savefig("plots/step1_check_data.png")
 
 # Create dummy variables
 dummy_fields = ['season', 'weathersit', 'mnth', 'hr', 'weekday']
@@ -34,6 +35,9 @@ for each in quant_features:
     mean, std = data[each].mean(), data[each].std()
     scaled_features[each] = [mean, std]
     data.loc[:, each] = (data[each] - mean)/std
+
+with open("data/scaled_features.csv", 'w') as f:
+    [f.write('{0},{1},{2}\n'.format(key, value[0], value[1])) for key, value in scaled_features.items()]
 
 # Split the data into training, testing, and validation sets
 
